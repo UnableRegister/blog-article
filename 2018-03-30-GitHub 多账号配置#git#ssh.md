@@ -1,6 +1,6 @@
 要在同一台电脑配置多个 GitHub 账号，需要通过SSH方式来连接远程仓库。
 
-### 创建 ssh key
+## 创建 ssh key
 
 ```
 $ cd ~/.ssh
@@ -15,21 +15,21 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/xxx/.ssh/id_rsa): id_rsa_second
 ```
 
-### 添加新密钥到 ssh-agent 中
+## 添加新密钥到 ssh-agent 中
 
 ```
 $ ssh-add ~/.ssh/id_rsa_first
 $ ssh-add ~/.ssh/id_rsa_second
 ```
 
-### 将 ssh key 添加到对应的  GitHub 账号
+## 将 ssh key 添加到对应的  GitHub 账号
 ```
 #将公钥内容拷贝的剪切板
 $ pbcopy < ~/.ssh/id_rsa_first.pub
 ```
 登录 github 并在设置中新增 ssh key。
 
-### 创建 config 文件
+## 创建 config 文件
 
 ```
 # 创建 ssh 配置文件
@@ -50,7 +50,7 @@ host 2nd
     IdentityFile /Users/x/.ssh/id_rsa_second
 ```
 
-### 使用
+## 使用
 
 ```
 #使用账号1添加远程仓库
