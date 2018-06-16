@@ -1,5 +1,3 @@
-# 2017-12-30-JavaScrip 零宽断言#JavaScrip#正则
-
 一个前端项目，`yarn test` 在本地 Chrome（版本 66） 调试无误。使用 `yarn build` 编译时出现下面的错误：
 
 ```shell
