@@ -57,6 +57,8 @@ host 2nd
 $ git remote add origin git@1st:user/repository.git
 #使用账号2添加远程仓库
 $ git remote add origin git@2st:user/repository.git
+#clone 账号1的仓库到本地
+$ git clone git@1st:user/repository.git
 
 #取消 global 配置
 $ git config --global --unset user.name
